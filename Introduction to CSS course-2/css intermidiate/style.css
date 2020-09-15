@@ -1,0 +1,132 @@
+/* ======================= CSS SPACING ============================= 
+noted for practice purpose previous work comment out * or / maens= comment 
+
+div {
+  border: 5px solid blue;
+  margin-bottom: 2rem;/* if margin negetive - 3D view *
+  background-color: lightblue;
+  padding-left: 1rem;
+  padding-right: 2rem;
+
+}
+.box1 {
+  border: 5px solid orange;
+  background-color: yellow;
+  width: 25%;
+}
+.box2 p {
+   border: 2px solid green;
+   width: 25rem;
+  /*margin-left: 1rem;
+    margin-right: 2rem;*/
+   /* margin-top:0;
+    margin-bottom:0;*
+}
+h1 {
+  /*margin-bottom:0;*
+  margin:0;
+}
+a ,strong,em {
+  border: 2px solid blue;
+}
+.box3 {
+  background-image: url("http://placekitten.com/200/300");
+  height: 150px; /* don
+}
+/*
+body {
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+  background-color: green;
+  padding: 1rem;
+  margin:0;
+  border: 0.5rem solid orange;
+}
+p {
+  background-color: blue;
+  padding: 1rem;
+}
+*/
+
+
+ /*   =========CSS LAYOUT ==============  */
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  border: 0px solid red;
+}
+/* use <nav> tag for those ul only under navigation *
+nav ul {
+    list-style-type: none;
+    border: 0px dotted blue;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+  border: 3px solid yellow;
+  width: 10rem;
+  background-color: red;
+  text-align: center;
+  margin-bottom: 0.7rem;
+ /* padding: 0.5rem; *
+  display: inline-block; /* make horizental *
+}
+nav a {
+  border: 3px dotted white;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+ /* text-align: center; /*here it's not work bcz a inline element *
+  text-decoration: none;
+  display: block;  /* inline elements(a link) convert into block elements or parents li bcz now whole clickable area *
+  padding: 0.5rem;
+}
+nav a:hover {
+  background-color: white;
+  color: red;
+}
+*/
+
+/* =====================  floats  ====================  */
+
+/*
+.floatleft {
+  float: left;
+  border: 5px solid red;
+ /* padding: 1rem;*/
+   /* TRouBLe *
+  margin: 0 1rem 1rem 0;
+}
+.floatright {
+  float: right;
+}
+article {
+   width: 25rem;
+   border:3px solid red;
+   margin: 0 auto; /* in case 2 number 0 rem top-bootom && left-right *
+}
+article:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+*/
+
+/* =============== FLEXBOX ================== */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+li {
+  border: 3px solid blue;
+  flex-basis: 10%;
+}

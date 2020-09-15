@@ -1,0 +1,214 @@
+html {
+    box-sizing : border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    background-image: url("../images/backpes-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.heading {
+    width: 80%;
+    margin: 0 auto; 
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+}
+.leftheader img {
+    border: 5px solid red;
+    border-radius: 20%;
+    margin: 3rem 2rem 0 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+.leftheader {
+    flex-basis: 20%;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+.rightheader {
+    flex-basis: 80%;
+    margin-top: 2.5rem;
+    width: 60%;
+    padding-left: 0.5rem;
+}
+/*.position {
+    display: block;
+    margin-bottom: auto;
+    margin-left: auto;
+}*/
+.rightheader h1 {
+   /* border: 5px dashed red;*/
+    font-size: 2.2rem;
+    color: #F2B705;
+    background-color: #327B8A;
+    border:  5px solid red;
+    border-radius: 30px;
+    text-align: center;
+}
+h2 {
+    color: orangered;
+    width: 80%;
+    border-radius: 30px;
+}
+.color {
+    text-align: center;
+    background-color: black;
+    font-size: 1.9rem;
+    border : 3px solid pink;
+    border-radius: 10%;
+    width: 40%;
+    margin-left: 25%;
+   /* float: right; */
+}
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: yellow;
+}
+.course {
+    background-color: lightcyan; 
+    text-align: center;
+    width: 60%;
+    margin-left: 18rem; 
+}
+.middle {
+  display: flex;
+  margin: 0;
+}
+.players {
+    flex-basis: 40%;
+    text-align: left;
+}
+.photo {
+   /* border: 5px dashed royalblue; */
+    /* float: right;  */
+    border-radius: 20px;
+    flex-basis: 60%;
+    text-align: right;
+}
+.photo img {
+    border: 5px dashed royalblue;
+    border-radius: 20px;
+}
+/*article:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+a {
+   color: #2FF895;
+   font-size: 1.5rem;
+   text-decoration: none;
+   display: flex;
+   justify-content: space-between; 
+   margin-top: 1rem;
+}
+a:hover {
+    color: orange;
+    background-color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav {
+    border-bottom: 1px solid #A61F11;
+    border-top: 1px solid #DA0090;
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: violet;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; 
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold; 
+    color: yellow;
+    background-color: #0e5eff; 
+    display:  block;
+    padding: 0.5rem  2rem;
+    margin: 0.5rem;
+}
+nav a:hover {
+    background-color: greenyellow;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+nav li {
+    display: inline-block;
+}
+.instructor {
+    display: flex;   
+  /*  background-color: navy;  */
+    margin: auto;
+    padding: auto;  
+    border: 18px solid transparent;  
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(197, 255, 80); /* rgb(241, 78, 56); */
+    line-height: 150%;
+    font-size: 1.3rem;
+   /* background-image: url("../images/cup-1.jpg"); */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+   border-image: url("../images/football-1.jpg") 30 round; 
+}
+.messi {
+    flex-basis: 20%;
+    border: 2px solid red;
+    margin: 2rem 0 2rem 0;
+    background-image: url("../images/backpes-4.jpg");
+ /*  background-color: greenyellow;
+  /*  text-align: center; */
+  padding: 1rem 0 1rem 0;
+  order: 2;
+}
+.ronaldo {
+    flex-basis: 20%;
+    border: 2px solid red; 
+    background-image: url("../images/backpes-4.jpg");
+    background-size: cover;
+  /*  background-color: greenyellow;  */
+   /* text-align: center; */
+   order: 1;
+}
+.neymar {
+    flex-basis: 20%;
+    border: 2px solid red;
+    background-image: url("../images/backpes-4.jpg");
+  /*  background-color: greenyellow;  */
+  /*  text-align: center;  */
+  order: 2;
+}
+article {
+    background-image: url("../images/india.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+article h1 {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    background-image: url("../images/back-1.png");
+    background-repeat: repeat;
+    height: 50px;
+    width: 40%;
+    margin-left: 23rem;
+    padding: 0rem;
+    border-radius: 10px;
+    border: 10px outset rgb(21, 255, 0);
+}

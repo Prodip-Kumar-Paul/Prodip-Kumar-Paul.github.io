@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+<!-- google fonts if offline or this site goes down this not working bcz we rely on this online -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+		<form
+		action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+		<input type="hidden" id="myhidden" name="send_to" value="prodipkumarpaul708@gmail.com">
+			<fieldset>
+			<legend>Your contact information</legend>
+			<label for="fullname">Your name</label>
+				<input type="text"
+				id="fullname" name="name">
+			<!-- here, name value is like key-value pair which is type in name is value-->
+			<!-- id is associative with level and check user type info correct or not  these 3 can be diff or same-->
+			<label for="phone">Phone number</label>
+			     <input type="tel" 
+				id="phone" name="phone" placeholder="Don't forget to write your area code">
+			<!-- tel change keyboard of phone it only reflect in phones-->
+			<label for="email">Email</label>
+			    <input type="email"
+				id="email" name="email">
+			<!-- email provides some cool features like .com -->	
+			</fieldset>
+          
+  <fieldset>
+			<legend>About your abduction </legend>
+			<label for="date">Requested  date</label>
+			   <input type="date"
+			   id="date" name="date"> 
+			<!--  value in id and value in for attribute have to be same 
+			name is for backend processing and value can varry actual values
+			is same properties value pair in css like border(properties): 10px solid red (value) -->
+			<label for="qty">How many people would you like abducted?</label>
+			   <input type="number"
+			   id="qty" name="qty" min="1" max="10">
+			<!-- qty is quantity id is unique per web page
+			once again you can be writing anything we need javascript for this 
+		    -->
+			<p>What type of UFO do you prefer?</p>
+			<!-- name ufotype provides no need to click only radio button can also click on text -->
+			<label>
+				<input	type="radio"
+				name="ufotype" value="Classic" checked>  Classic oval UFOs
+			</label>
+			<label>
+				<input	type="radio"
+				name="ufotype" value="starwars"> Star Wars-style Imperial cruiser
+			</label>
+			<!-- when multiple selected check the names have same or not-->
+			<label>
+				<input	type="radio"
+				name="ufotype" value="galactica">Battlestar Galactica-style Viper
+			</label>
+            <label>
+				<input	type="radio"
+				name="ufotype" value="borg"> Borg-style cube
+            </label>
+				
+			<label for="abtype">What type of abduction experience do you want?  </label>
+				<select id="abtype" name="abtype">
+					<option selected >Select one....</option>
+					<option value="tour">Tour of the solar system</option>
+					<option value="dinner" selected>Alien dinner and discussion</option> <!-- can make it default or more uses -->
+					<option value="dance">Alien dance lessons</option>
+					<option  value="whales">Whale watching</option>
+				</select>
+			<label for="comments">Special requests:</label>
+            <textarea id="comments" name="comments" placeholder="Tell me everything...."></textarea>
+
+
+
+			<label >
+			  <input type="checkbox" value="subscribe" name="subscribe"   checked> Add me to your email list!
+			</label>
+
+	</fieldset>
+	<button type="submit">Order your abduction experience!!!!</button>
+    <!-- no id bcz no label for and no need name bcz no info requried to process  -->
+	    </forms>				
+		</section>
+		<aside>
+                    <!-- video ncs-1-->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.9439974956076!2d-93.27216382121681!3d44.977419849040274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a75fc44b3%3A0x4d957d624359d4c7!2s60%20South%206th%20St%20%233625%2C%20Minneapolis%2C%20MN%2055402%2C%20USA!5e0!3m2!1sen!2sin!4v1600091692374!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		
+			            <!-- video ncs-2-->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/QglaLzo_aPk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			      <!-- music ncs -->
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177671751&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nocopyrightsounds" title="NCS" target="_blank" style="color: #cccccc; text-decoration: none;">NCS</a> · <a href="https://soundcloud.com/nocopyrightsounds/alan-walker-fade-ncs-release" title="Alan Walker - Fade [NCS Release]" target="_blank" style="color: #cccccc; text-decoration: none;">Alan Walker - Fade [NCS Release]</a></div>
+				   
+			           <!-- music ncs -->
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/287309000&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cleanbandit" title="Clean Bandit" target="_blank" style="color: #cccccc; text-decoration: none;">Clean Bandit</a> · <a href="https://soundcloud.com/cleanbandit/rockabye-feat-sean-paul-anne" title="Rockabye (feat. Sean Paul &amp; Anne-Marie)" target="_blank" style="color: #cccccc; text-decoration: none;">Rockabye (feat. Sean Paul &amp; Anne-Marie)</a></div>
+		
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
